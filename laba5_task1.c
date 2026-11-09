@@ -6,7 +6,7 @@ int main() {
     const double PI = 3.14159265358979323846;
 
     printf("Enter angle in degrees: ");
-    scanf("%lf", &gr);
+    if (scanf_s("%lf", &gr) != 1) return 1;
 
     rad = gr * PI / 180.0;
     result = sin(rad);
